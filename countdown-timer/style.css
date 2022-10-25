@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/josh-hild-_TuI8tZHlk4-unsplash.jpg);
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-decoration-color: white;
+}
+
+h1 {
+    color: black;
+    font-weight: normal;
+    font-size: 5rem;
+    margin-top: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-text {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: bold;
+    margin: 0 2rem;
+    color: brown;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.contdown-el span {
+    font-size: 2rem;
+    color: aqua
+}

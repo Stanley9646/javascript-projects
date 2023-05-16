@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/josh-hild-_TuI8tZHlk4-unsplash.jpg);
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-decoration-color: white;
+}
+
+.quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%;
+}
+
+quiz-header {
+    padding: 4rem;
+}
+
+h2 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: purple;
+    border: none;
+    color: white;
+    display: block;
+    font-size: 1.3rem;
+    width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: crimson;
+}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellow;
+    color: white;
+    background-image: url(/images/josh-hild-_TuI8tZHlk4-unsplash.jpg);
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-decoration-color: white;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.box {
+    background-color: crimson;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px black;
+    transform: translateX(200%);
+    transition: transform 0.4s ease;
+}
+
+.box::nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 45px;
+}

@@ -1,0 +1,241 @@
+:root {
+    --bg-black-900: white;
+    --bg-black-100: white;
+    --bg-black-50: white;
+    --text-black-900: grey;
+    --text-black-700: grey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.section {
+    background-color: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    padding: 0 30px;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
+}
+
+.padd-15px {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 500%;
+    background-color: rgb(36, 17, 180);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 35px;
+    color: aliceblue;
+    border-radius: 40px;
+    display: inline-block;
+    border: none;
+    white-space: nowrap;
+    background-color: peru;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.aside {
+    width: 270px;
+    background-color: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    padding: 30px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    z-index: index 10;
+}
+
+.aside .logo {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.aside .logo a {
+    color: var(--text-black-900);
+    font-weight: 700;
+    font-size: 30px;
+    top: 0;
+    padding: 15px 20px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.aside .logo a span {
+    font-family: cursive;
+    font-family: 40px;
+}
+
+.aside .logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(crimson);
+    border-left: 5px solid var(crimson);
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(crimson);
+    border-right: 5px solid var(crimson);
+    top: 0;
+    right: 0;
+}
+
+.aside .nav-toggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(crimson);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(crimson);
+}
+
+.aside .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background: crimson;
+    display: inline-block;
+}
+
+.aside .nav {
+    margin-top: 50px;
+}
+
+.aside .nav li {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.aside .nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+    display: block;
+}
+
+.aside .nav li a.active {
+    color: crimson;
+}
+
+.aside .nav li a i {
+    margin-right: 15px;
+}
+
+
+/*home*/
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+    max-width: 100%;
+}
+
+.home .home-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+h3.hello {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.hello span {
+    font-family: cursive;
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+h3.my-profession {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typing {
+    color: peru;
+}
+
+.home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: black;
+}
+
+.home .home-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.home .home-img img {
+    height: 400px;
+}

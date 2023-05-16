@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    text-decoration-color: white;
+}
+
+.bg {
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/erik-torres-QjLusaW58QE-unsplash.jpg);
+    position: absolute;
+    z-index: -1;
+    height: calc(100vh + 60px);
+    width: calc(100vw + 60px);
+    left: -30px;
+    top: -30px;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: crimson;
+}
